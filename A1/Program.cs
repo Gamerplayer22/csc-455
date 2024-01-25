@@ -24,12 +24,22 @@ namespace csc_455_1
                 Console.WriteLine("5. exit");
                 Console.WriteLine("Choose 1-5:");
                 x = Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine();
                 if (x == "1") 
                 {
                     Random rnd = new Random();
-                    Console.WriteLine("The random number: {0}",rnd.Next(10)+1);                
+                    Console.WriteLine("The random number: {0}",rnd.Next(10)+1);
+                    Console.WriteLine();
+                    Console.WriteLine();
                 }
-                if (x == "2") { }
+                if (x == "2") 
+                {
+                    DateTime thisDay = DateTime.Today;
+                    Console.WriteLine("Today's date: {0}",thisDay.ToShortDateString());
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
                 if (x == "3") { }
                 if (x == "4") { }
                 if (x == "5") { choice = 0; }
