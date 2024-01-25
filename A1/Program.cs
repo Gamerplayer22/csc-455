@@ -26,6 +26,7 @@ namespace csc_455_1
                 x = Console.ReadLine();
                 Console.WriteLine();
                 Console.WriteLine();
+                
                 if (x == "1") 
                 {
                     Random rnd = new Random();
@@ -33,6 +34,7 @@ namespace csc_455_1
                     Console.WriteLine();
                     Console.WriteLine();
                 }
+
                 if (x == "2") 
                 {
                     DateTime thisDay = DateTime.Today;
@@ -40,7 +42,38 @@ namespace csc_455_1
                     Console.WriteLine();
                     Console.WriteLine();
                 }
-                if (x == "3") { }
+
+                if (x == "3") 
+                {
+                    List<string> dinosaurs = new List<string>();
+                    dinosaurs.Add("Gorgosaurus");
+                    dinosaurs.Add("Allosaurus");
+                    dinosaurs.Add("Aardonyx");
+                    dinosaurs.Add("Megalosaurus");
+                    dinosaurs.Add("Abrosaurus");
+                    dinosaurs.Add("Homalocephale");
+                    dinosaurs.Add("Alvarezsaurus");
+                    dinosaurs.Add("Datousaurus");
+                    dinosaurs.Add("Ammosaurus");
+                    dinosaurs.Add("Capitalsaurus");
+
+                    Console.WriteLine("unordered list: ");
+                    foreach (string d in dinosaurs)
+                        Console.WriteLine(d);
+                    Console.WriteLine();
+                    Console.WriteLine("ordered list: ");
+
+                    var result = dinosaurs.OrderBy(n=>n);
+
+                    foreach(var d in result)
+                        Console.WriteLine(d);
+                    Console.WriteLine();
+                    Random rnd = new Random();                    
+                    Console.WriteLine("Random dinosaur picked: {0}", dinosaurs[rnd.Next(10)]);
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
+
                 if (x == "4") { }
                 if (x == "5") { choice = 0; }
             }
