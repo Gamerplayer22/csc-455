@@ -14,7 +14,7 @@ namespace csc_455_1
             string x= "0";
             string str;
 
-            i++ and y++ and route[t]
+            i++ sadsadsad y++  route[t]
 
             List<string> dinosaurs = new List<string>();
             dinosaurs.Add("Gorgosaurus");
