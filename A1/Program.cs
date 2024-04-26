@@ -73,6 +73,7 @@ namespace csc_455_1
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.Wri
+                    Console.W
                 }
 
                 if (x == "4") 
