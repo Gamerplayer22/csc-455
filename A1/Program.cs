@@ -14,7 +14,7 @@ namespace csc_455_1
             Random rnd = new Random();
             return rnd.Next(10) + 1;
         }
-        public void Main(string[] args)
+        static void Main(string[] args)
         {
             int choice = 1;
             string x= "0";
