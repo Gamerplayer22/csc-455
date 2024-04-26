@@ -72,7 +72,7 @@ namespace csc_455_1
                     Console.WriteLine("Random dinosaur picked: {0}", dinosaurs[rnd.Next(10)]);
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.WriteLine(;
+                    Console.Wri
                 }
 
                 if (x == "4") 
