@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace csc_455_1
 {
-    internal class Program
+
+    public class Program
     {
-        static void Main(string[] args)
+        public int randomnumber()
+        {
+            Random rnd = new Random();
+            return rnd.Next(10) + 1;
+        }
+        public void Main(string[] args)
         {
             int choice = 1;
             string x= "0";
